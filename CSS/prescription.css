@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #ccc;
+}
+/* Prescription Submission Page Styles */
+.prescription-form {
+    padding: 40px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.prescription-form h1 {
+    text-align: center;
+    color: #3a7ca5;
+    margin-bottom: 20px;
+}
+
+.prescription-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.prescription-form label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.prescription-form input, 
+.prescription-form select, 
+.prescription-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.prescription-form .submit-button {
+    padding: 10px;
+    background-color: #3a7ca5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prescription-form .submit-button:hover {
+    background-color: #2e6180;
+}
