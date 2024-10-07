@@ -1,42 +1,63 @@
+/* About Us Page Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 /* Navbar Styles */
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    background-color: rgb(41, 41, 41);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: -230px;
     padding: 0;
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1;
 }
 
 .navbar ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar ul li a:hover {
-    color: #ccc;
+    color: #3a95a5;
 }
-/* About Us Page Styles */
+
+/* Logo styling */
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* About Us Banner */
+.about-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* About Us Section */
 .about {
-    padding: 40px;
+    padding: 30px;
     background-color: #fff;
     text-align: left;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -52,13 +73,90 @@ body {
     color: #333;
 }
 
-.about ul {
-    list-style-type: disc;
-    margin-left: 40px;
-    color: #333;
+/* Why Choose Us Icons */
+.why-choose-us {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.about ul li {
+.why-choose-us li {
     font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.why-choose-us li img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+/* Pharmacists Section */
+.pharmacists {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.pharmacist-card {
+    text-align: center;
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pharmacist-card img {
+    width: 450px;
+    height: 320px;
+    border-radius: 5%;
+    margin-bottom: 15px;
+}
+
+.pharmacist-card h3 {
     margin: 10px 0;
+    color: #3a7ca5;
+}
+
+.pharmacist-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #3a95a5;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
 }

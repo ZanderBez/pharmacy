@@ -2,35 +2,47 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url("../Assets/AdobeStock_333623558.jpeg");
+    width: 100%;
+    height: auto;
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    background-color:rgb(41, 41, 41);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: -230px;
     padding: 0;
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1;
 }
 
 .navbar ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar ul li a:hover {
-    color: #ccc;
+    color: #3a95a5;
+}
+
+/* Logo styling */
+.logo img {
+    max-width: 200px;
+    height: auto;
 }
 /* Prescription Submission Page Styles */
 .prescription-form {
@@ -73,8 +85,63 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 17px;
 }
 
 .prescription-form .submit-button:hover {
     background-color: #2e6180;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #3a95a5;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
 }

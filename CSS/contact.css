@@ -7,37 +7,50 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    background-color: rgb(41, 41, 41);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: -200px;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .navbar ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar ul li a:hover {
-    color: #ccc;
+    color: #3a95a5;
 }
-/* Contact/Support Page Styles */
+
+/* Logo styling */
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Contact Form Styles */
 .contact-form {
     padding: 40px;
     background-color: #fff;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .contact-form h1 {
@@ -56,37 +69,80 @@ body {
     color: #333;
 }
 
-.contact-form input, 
-.contact-form select, 
+.contact-form input,
+.contact-form select,
 .contact-form textarea {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #3a7ca5;
+    outline: none;
 }
 
 .contact-form .submit-button {
-    padding: 10px;
+    padding: 12px;
     background-color: #3a7ca5;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form .submit-button i {
+    margin-right: 8px;
 }
 
 .contact-form .submit-button:hover {
     background-color: #2e6180;
 }
 
-.phone-support, .faq {
+/* Map Section */
+.map-section {
     padding: 40px;
     text-align: center;
     background-color: #eaf6f6;
 }
 
+.map-section h2 {
+    margin-bottom: 10px;
+    color: #3a7ca5;
+}
+
+.map-section p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Phone Support Section */
+.phone-support {
+    color: white;
+    padding: 40px;
+    text-align: center;
+    background-color: #3a7ca5;
+}
+
 .phone-support p {
     font-size: 18px;
+}
+
+/* FAQ Section */
+.faq {
+    color: white;
+    padding: 40px;
+    background-color: #3a7ca5;
+    text-align: center;
 }
 
 .faq h2 {
@@ -101,4 +157,39 @@ body {
 .faq ul li {
     font-size: 18px;
     margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #3a95a5;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
 }

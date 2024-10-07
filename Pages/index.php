@@ -11,13 +11,16 @@
 <body>
     <header class="banner">
         <nav class="navbar">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="prescription.php">Submit Prescription</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </nav>
+            <div class="logo">
+                <img src="../Assets/Logo.png" alt="Pharmacy Logo">
+            </div>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="prescription.php">Submit Prescription</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
 
     <!-- Welcome Banner -->
     
@@ -101,7 +104,7 @@
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-        <p>&copy; 2024 Online Pharmacy. All rights reserved.</p>
+        <p>&copy; 2024 MediTrust. All rights reserved.</p>
     </div>
 </footer>
 

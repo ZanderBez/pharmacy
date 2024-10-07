@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Prescription - Online Pharmacy</title>
     <link rel="stylesheet" href="../css/prescription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="prescription.php">Submit Prescription</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </nav>
+            <div class="logo">
+                <img src="../Assets/Logo.png" alt="Pharmacy Logo">
+            </div>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="prescription.php">Submit Prescription</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
 
     <!-- Prescription Submission Section -->
     <section class="prescription-form">
@@ -51,6 +55,17 @@
             <button type="submit" class="submit-button">Submit Prescription</button>
         </form>
     </section>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 MediTrust. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
