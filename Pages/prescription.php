@@ -28,32 +28,34 @@
         <p>Please fill out the form below and upload your prescription. Our pharmacists will review your submission and prepare your medication for delivery or pickup.</p>
 
         <form action="../php/submit_prescription.php" method="POST" enctype="multipart/form-data">
-            <label for="name">Full Name:</label>
+            <label for="name"><i class="fa fa-user"></i> Full Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
+            <label for="email"><i class="fa fa-envelope"></i> Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone:</label>
+            <label for="phone"><i class="fa fa-phone"></i> Phone:</label>
             <input type="tel" id="phone" name="phone" required>
 
-            <label for="address">Delivery Address:</label>
+            <label for="address"><i class="fa-solid fa-location-dot"></i> Delivery Address:</label>
             <input type="text" id="address" name="address" required>
 
-            <label for="delivery">Delivery Option:</label>
+            <label for="delivery"><i class="fa fa-question-circle"></i> Delivery Option:</label>
             <select id="delivery" name="delivery">
                 <option value="delivery">Home Delivery</option>
                 <option value="pickup">Pickup at Pharmacy</option>
             </select>
 
-            <label for="prescription">Upload Prescription (PDF, JPEG, PNG):</label>
+            <label for="prescription"><i class="fa-solid fa-upload"></i> Upload Prescription (PDF, JPEG, PNG):</label>
             <input type="file" id="prescription" name="prescription" accept=".pdf, .jpg, .jpeg, .png" required>
 
-            <label for="message">Notes for Pharmacist (Optional):</label>
+            <label for="message"><i class="fa fa-comment"></i> Notes for Pharmacist (Optional):</label>
             <textarea id="message" name="message" rows="4"></textarea>
 
-            <button type="submit" class="submit-button">Submit Prescription</button>
+            <button type="submit" class="submit-button"><i class="fa fa-paper-plane"></i> Submit Prescription</button>
         </form>
+
+
     </section>
 
     <footer class="footer">

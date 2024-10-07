@@ -1,3 +1,27 @@
+<?php
+include '../db_connect.php';
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $inquiry = $_POST['inquiry'];
+    $message = $_POST['message'];
+
+    $sql = "INSERT INTO contact_inquiries (name, email, phone, inquiry, message) 
+            VALUES ('$name', '$email', '$phone', '$inquiry', '$message')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<script>alert('Thank you we wil be in touch shortly.');</script>";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +51,7 @@
         <h1>Contact Us</h1>
         <p>We’re here to help! Use the form below to reach out to our customer support team for assistance with your prescription or delivery inquiries.</p>
 
-        <form action="../php/contact.php" method="POST">
+        <form action="contact.php" method="POST">
             <label for="name"><i class="fa fa-user"></i> Full Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
