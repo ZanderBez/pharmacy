@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Prescription - Online Pharmacy</title>
-    <link rel="stylesheet" href="../css/prescription.css">
+    <link rel="stylesheet" href="../prescription.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50DK9Z7FGE"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-50DK9Z7FGE');
+    </script>
 <body>
 
     <!-- Navbar -->
